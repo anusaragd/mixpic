@@ -137,8 +137,8 @@ public class MyBitmapFile
             biCompression = 0;  //BI_RGB; #define BI_RGB        0L
             biSizeImage = 0;
             biClrUsed = biClrImportant = 0;
-            biXPelsPerMeter = 0x4CE6;	//500DPI
-            biYPelsPerMeter = 0x4CE6;	//500DPI
+            biXPelsPerMeter = 0x4CE5;	//499.99DPI
+            biYPelsPerMeter = 0x4CE5;	//499.99DPI
             biSize = 40;
         }
         
