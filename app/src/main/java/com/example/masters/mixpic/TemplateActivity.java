@@ -5,6 +5,8 @@ import android.os.Bundle;
 
 public class TemplateActivity extends AppCompatActivity {
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

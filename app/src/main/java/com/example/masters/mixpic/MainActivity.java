@@ -3,7 +3,9 @@ package com.example.masters.mixpic;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.graphics.Color;
 import android.graphics.Matrix;
+import android.graphics.drawable.ColorDrawable;
 import android.media.ExifInterface;
 import android.net.Uri;
 import android.os.Build;
@@ -67,6 +69,7 @@ public class MainActivity extends BiometricsActivity {
             @Override
             public void onClick(View v) {
                 Intent serverIntent = new Intent(MainActivity.this, TemplateActivity.class);
+                Imagefinger.getDrawable();
 //                serverIntent.putExtra("Image",Imagefinger.);
                 startActivityForResult(serverIntent, REQUEST_FILE_FORMAT);
             }
