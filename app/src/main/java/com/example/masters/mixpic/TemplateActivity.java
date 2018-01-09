@@ -27,7 +27,7 @@ public class TemplateActivity extends BiometricsActivity {
                     Intent intent = new Intent(Intent.ACTION_GET_CONTENT, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
                     intent.setType("image/*");
                     startActivityForResult(Intent.createChooser(intent,"Select Picture "),222);
-                    picfinger.getDrawable();
+                    picfinger.setImageDrawable(null);
                 }
             });
 //            picfinger.setImageDrawable(Imagefinger.findViewById(R.id.imageView));
