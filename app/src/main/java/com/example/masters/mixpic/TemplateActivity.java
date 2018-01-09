@@ -11,5 +11,7 @@ public class TemplateActivity extends AppCompatActivity {
         setContentView(R.layout.activity_template);
 
 
+
+
     }
 }
