@@ -194,9 +194,13 @@ public class MainActivity extends BiometricsActivity {
 
     public static Bitmap rotateImage(Bitmap source, float angle) {  // rotate bitmap
         Matrix matrix = new Matrix();
+        int width = 400;
+        int heigth = 400;
         matrix.postRotate(angle);
-        return Bitmap.createBitmap(source, 0, 0, source.getWidth(), source.getHeight(),
-                matrix, true);
+//        return Bitmap.createBitmap(source, 0, 0, source.getWidth(), source.getHeight(),
+//                matrix, true);
+//        return Bitmap.createBitmap(400,400,Bitmap.Config.ARGB_8888);
+        return Bitmap.createBitmap(source.getWidth(), source.getHeight(),Bitmap.Config.ARGB_8888);
     }
 
     public Bitmap getBitmap(String path) {            // return Bitmap from file path
